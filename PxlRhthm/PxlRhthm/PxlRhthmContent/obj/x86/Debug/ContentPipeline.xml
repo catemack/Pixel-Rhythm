@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>barrier.png</Source>
+      <Name>barrier</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\barrier.xnb</Output>
+      <Time>2014-05-08T11:33:29.6621448-05:00</Time>
+    </Item>
+    <Item>
+      <Source>numbers.png</Source>
+      <Name>numbers</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\numbers.xnb</Output>
+      <Time>2014-05-08T11:32:42.2794347-05:00</Time>
+    </Item>
+    <Item>
+      <Source>paddle.png</Source>
+      <Name>paddle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\paddle.xnb</Output>
+      <Time>2014-05-08T11:20:05.0951262-05:00</Time>
+    </Item>
+    <Item>
+      <Source>pixel_big.png</Source>
+      <Name>pixel_big</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\pixel_big.xnb</Output>
+      <Time>2014-05-08T11:19:43.078867-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthmContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthmContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-06-28T12:47:57.9102598-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

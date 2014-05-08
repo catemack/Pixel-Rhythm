@@ -1,0 +1,10 @@
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\barrier.xnb
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\numbers.xnb
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\paddle.xnb
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\Content\pixel_big.xnb
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\PxlRhthm.exe
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\bin\x86\Debug\PxlRhthm.pdb
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\obj\x86\Debug\PxlRhthm.csprojResolveAssemblyReference.cache
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\obj\x86\Debug\PxlRhthm.exe
+C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthm\obj\x86\Debug\PxlRhthm.pdb
