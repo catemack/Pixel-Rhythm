@@ -1,1 +1,2 @@
 C:\Users\Chase\Documents\Visual Studio 2010\Projects\PxlRhthm\PxlRhthm\PxlRhthmContent\obj\x86\Debug\PxlRhthmContent.contentprojResolveAssemblyReference.cache
+C:\Users\Chase\Documents\GitHub\Pixel-Rhythm\PxlRhthm\PxlRhthm\PxlRhthmContent\obj\x86\Debug\PxlRhthmContent.contentprojResolveAssemblyReference.cache
