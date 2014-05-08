@@ -61,7 +61,6 @@ namespace PxlRhthm
             pixels = new List<Pixel>();
             previousSpawnTime = TimeSpan.Zero;
             pixelSpawnTime = TimeSpan.FromSeconds(1.0f);
-            Console.WriteLine("Pixels initialized.");
 
             random = new Random();
             
@@ -86,7 +85,6 @@ namespace PxlRhthm
             barrier.Initialize((Content.Load<Texture2D>("barrier")), barrierPosition);
 
             pixelTexture = Content.Load<Texture2D>("pixel_big");
-            Console.WriteLine("Pixel texture loaded.");
         }
 
         /// <summary>
@@ -113,8 +111,6 @@ namespace PxlRhthm
             currentKeyboardState = Keyboard.GetState();
 
             UpdatePlayer(gameTime);
-
-            Console.WriteLine("UpdatePixels called.");
             UpdatePixels(gameTime);
 
             base.Update(gameTime);
@@ -148,7 +144,6 @@ namespace PxlRhthm
             pixel.Initialize(pixelTexture, position);
 
             pixels.Add(pixel);
-            Console.WriteLine("Pixel added.");
         }
 
         private void UpdatePixels(GameTime gameTime)
@@ -157,11 +152,9 @@ namespace PxlRhthm
             {
                 previousSpawnTime = gameTime.TotalGameTime;
 
-                Console.WriteLine("Calling AddPixel.");
                 AddPixel();
             }
 
-            Console.WriteLine("Updating pixels.");
             for (int i = pixels.Count - 1; i >= 0; i--)
             {
                 pixels[i].Update(gameTime);
@@ -186,7 +179,6 @@ namespace PxlRhthm
             player.Draw(spriteBatch);
             barrier.Draw(spriteBatch);
 
-            Console.WriteLine("Drawing pixels.");
             for (int i = 0; i < pixels.Count; i++)
             {
                 pixels[i].Draw(spriteBatch);

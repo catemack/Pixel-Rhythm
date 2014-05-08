@@ -43,7 +43,7 @@ namespace PxlRhthm
         {
             Position.Y += pixelMoveSpeed;
 
-            if (Position.Y > Height)
+            if (Position.Y > 320)
             {
                 Active = false;
             }
