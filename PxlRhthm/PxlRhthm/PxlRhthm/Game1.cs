@@ -34,6 +34,8 @@ namespace PxlRhthm
         TimeSpan pixelSpawnTime;
         TimeSpan previousSpawnTime;
 
+        int score;
+
         Random random;
 
         public Game1()
@@ -61,6 +63,8 @@ namespace PxlRhthm
             pixels = new List<Pixel>();
             previousSpawnTime = TimeSpan.Zero;
             pixelSpawnTime = TimeSpan.FromSeconds(1.0f);
+
+            score = 0;
 
             random = new Random();
             
@@ -111,7 +115,10 @@ namespace PxlRhthm
             currentKeyboardState = Keyboard.GetState();
 
             UpdatePlayer(gameTime);
+            UpdateCollision();
             UpdatePixels(gameTime);
+
+            this.Window.Title = score.ToString();
 
             base.Update(gameTime);
         }
@@ -132,6 +139,31 @@ namespace PxlRhthm
 
             player.Position.X = MathHelper.Clamp(player.Position.X,
                 0, GraphicsDevice.Viewport.Width - player.Width);
+        }
+
+        private void UpdateCollision()
+        {
+            Rectangle rectangle1;
+            Rectangle rectangle2;
+
+            rectangle1 = new Rectangle((int)player.Position.X,
+                (int)player.Position.Y,
+                player.Width,
+                player.Height);
+
+            for (int i = 0; i < pixels.Count; i++)
+            {
+                rectangle2 = new Rectangle((int)pixels[i].Position.X,
+                    (int)pixels[i].Position.Y,
+                    pixels[i].Width,
+                    pixels[i].Height);
+
+                if (rectangle1.Intersects(rectangle2))
+                {
+                    score += 1;
+                    pixels[i].Active = false;
+                }
+            }
         }
 
         private void AddPixel()
