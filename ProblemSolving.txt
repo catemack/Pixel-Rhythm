@@ -1,0 +1,2 @@
+-UpdateScore currently will only update Tens digits and up with point
+increments of 1 (checks % by digit to update)

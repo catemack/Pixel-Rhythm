@@ -31,6 +31,13 @@ namespace PxlRhthm
         Texture2D pixelTexture;
         List<Pixel> pixels;
 
+        Texture2D numberStrip;
+        Number Ones;
+        Number Tens;
+        Number Hundreds;
+        Number Thousands;
+        Number TenThousands;
+
         TimeSpan pixelSpawnTime;
         TimeSpan previousSpawnTime;
 
@@ -64,6 +71,12 @@ namespace PxlRhthm
             previousSpawnTime = TimeSpan.Zero;
             pixelSpawnTime = TimeSpan.FromSeconds(1.0f);
 
+            Ones = new Number();
+            Tens = new Number();
+            Hundreds = new Number();
+            Thousands = new Number();
+            TenThousands = new Number();
+
             score = 0;
 
             random = new Random();
@@ -89,6 +102,13 @@ namespace PxlRhthm
             barrier.Initialize((Content.Load<Texture2D>("barrier")), barrierPosition);
 
             pixelTexture = Content.Load<Texture2D>("pixel_big");
+
+            numberStrip = Content.Load<Texture2D>("numbers");
+            Ones.Initialize(numberStrip, new Vector2(280, 10), 30, 50, 10, Color.White);
+            Tens.Initialize(numberStrip, new Vector2(240, 10), 30, 50, 10, Color.White);
+            Hundreds.Initialize(numberStrip, new Vector2(200, 10), 30, 50, 10, Color.White);
+            Thousands.Initialize(numberStrip, new Vector2(160, 10), 30, 50, 10, Color.White);
+            TenThousands.Initialize(numberStrip, new Vector2(120, 10), 30, 50, 10, Color.White);
         }
 
         /// <summary>
@@ -115,7 +135,7 @@ namespace PxlRhthm
             currentKeyboardState = Keyboard.GetState();
 
             UpdatePlayer(gameTime);
-            UpdateCollision();
+            UpdateCollision(gameTime);
             UpdatePixels(gameTime);
 
             this.Window.Title = score.ToString();
@@ -141,7 +161,7 @@ namespace PxlRhthm
                 0, GraphicsDevice.Viewport.Width - player.Width);
         }
 
-        private void UpdateCollision()
+        private void UpdateCollision(GameTime gameTime)
         {
             Rectangle rectangle1;
             Rectangle rectangle2;
@@ -160,8 +180,31 @@ namespace PxlRhthm
 
                 if (rectangle1.Intersects(rectangle2))
                 {
-                    score += 1;
+                    UpdateScore(gameTime, pixels[i].Value);
                     pixels[i].Active = false;
+                }
+            }
+        }
+
+        private void UpdateScore(GameTime gameTime, int scoreIncrease)
+        {
+            score += scoreIncrease;
+            Ones.Update(gameTime, scoreIncrease);
+            if (score % 10 == 0)
+            {
+                Tens.Update(gameTime, 1);
+
+                if (score % 100 == 0)
+                {
+                    Hundreds.Update(gameTime, 1);
+
+                    if (score % 1000 == 0)
+                    {
+                        Thousands.Update(gameTime, 1);
+
+                        if (score % 10000 == 0)
+                            TenThousands.Update(gameTime, 1);
+                    }
                 }
             }
         }
@@ -215,6 +258,12 @@ namespace PxlRhthm
             {
                 pixels[i].Draw(spriteBatch);
             }
+
+            Ones.Draw(spriteBatch);
+            Tens.Draw(spriteBatch);
+            Hundreds.Draw(spriteBatch);
+            Thousands.Draw(spriteBatch);
+            TenThousands.Draw(spriteBatch);
 
             spriteBatch.End();
 
